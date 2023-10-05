@@ -1,0 +1,36 @@
+// utils
+@import "utils/animista";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/vars";
+
+// vendors
+@import "vendors/reset";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+@import "layout/grid";
+
+// UI
+@import "components/UI/btn";
+
+// components - header
+@import "components/navbar";
+@import "components/download-cv";
+
+// sections
+@import "sections/blog";
+@import "sections/education";
+@import "sections/map";
+@import "sections/portfolio";
+@import "sections/price";
+@import "sections/rayan";
+@import "sections/recommendations";
+@import "sections/work-history";
+@import "sections/your-info";
+
+// components - footer
+@import "components/footer";
+
+// & swiper
