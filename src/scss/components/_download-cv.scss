@@ -1,0 +1,201 @@
+.cv {
+  background: var(--White);
+  padding: 50px 45px 25px 40px;
+    max-width: 305px;
+
+  &__avatar {
+    text-align: center;
+
+    img {
+      max-width: 150rem;
+      max-height: 150rem;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    color: var(--Black);
+    font: var(--H4);
+    text-transform: capitalize;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__profession {
+    text-align: center;
+    color: var(--Paragraph-Font, #767676);
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    padding-bottom: 25px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 220px;
+      height: 1.5px;
+      background: var(--Background);
+      bottom: 0;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 10px;
+    position: relative;
+    padding: 25px 0 25px 0;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 220px;
+      height: 1.5px;
+      background: var(--Background);
+      bottom: 0;
+    }
+  }
+
+  &__info-props {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__argument,
+  &__value {
+    color: var(--Black);
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+
+    &._color {
+      color: var(--Available);
+    }
+  }
+
+  &__argument {
+    padding: 1px 5px;
+    background: var(--Yellow);
+  }
+
+  &__languages,
+  &__skills,
+  &__extra-skills {
+    padding: 25px 0 25px 0;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 220px;
+      height: 1.5px;
+      background: var(--Background);
+      bottom: 0;
+    }
+  }
+
+  &__title {
+    color: var(--Black);
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+
+  &__language-slot,
+  &__skill-slot {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__language-name,
+  &__skill-name {
+    color: var(--Paragraph-Font, #767676);
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+  }
+
+  &__language-value,
+  &__skill-value {
+    color: var(--Paragraph-Font, #767676);
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+  }
+
+  &__language-progress,
+  &__skill-progress {
+    max-width: 220px;
+    height: 6px;
+    border: 1px solid var(--Yellow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__language-line,
+  &__skill-line {
+    max-width: 220px;
+    height: 2px;
+    background: var(--Yellow);
+    border-radius: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  &__extra-list {
+    display: grid;
+    gap: 5px;
+  }
+
+  &__extra-slot {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__extra-skills-name {
+    color: var(--Paragraph-Font);
+    font-kerning: none;
+    font-feature-settings: "calt" off;
+    font: var(--Paragraph_Progress-15);
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    align-items: center;
+    padding: 10px 40px;
+    background: var(--Yellow);
+  }
+
+  &__btn-title {
+    color: var(--Black, #2b2b2b);
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
