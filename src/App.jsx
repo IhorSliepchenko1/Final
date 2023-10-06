@@ -13,6 +13,7 @@ import { Map } from "./sections/Map";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/NavBar";
 
+
 function App() {
   useEffect(() => {}, []);
   return (
