@@ -1,5 +1,6 @@
 {
   "name": "final-project",
+  "homepage": "https://IhorSliepchenko1.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "google-map-react": "^2.2.1",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
