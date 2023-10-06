@@ -29,11 +29,10 @@ function App() {
           <Portfolio />
           <Blog />
           <Map />
+          <Footer />
         </div>
         <NavBar />
       </div>
-
-      <Footer />
     </>
   );
 }

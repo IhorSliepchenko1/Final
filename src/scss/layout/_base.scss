@@ -20,7 +20,7 @@ body {
 }
 body {
   font-family: var(--ff);
-  padding: 32px;
+  padding: 30px;
   background: var(--Background);
 
   @include mobile {
@@ -37,6 +37,10 @@ body {
 }
 
 .body {
-  display: flex;
-  justify-content: space-between;
+  max-width: 1440px;
+  margin-inline: auto;
+
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
