@@ -1,6 +1,6 @@
 {
   "name": "final-project",
-  "homepage": "https://IhorSliepchenko1.github.io/portfolio",
+  "homepage": "https://IhorSliepchenko1.github.io/final",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-p -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.0.0",
