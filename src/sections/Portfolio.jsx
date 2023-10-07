@@ -22,29 +22,29 @@ export const Portfolio = () => {
         </div>
         <ul className="portfolio__ul">
           <li className="portfolio__li">
-            <a href="/" className="portfolio__a a__active">
+            <button className="portfolio__a a__active">
               All categories
-            </a>
+            </button>
           </li>
           <li className="portfolio__li">
-            <a href="/" className="portfolio__a">
+            <button className="portfolio__a">
               UI Design
-            </a>
+            </button>
           </li>
           <li className="portfolio__li">
-            <a href="/" className="portfolio__a">
+            <button className="portfolio__a">
               Web Templates
-            </a>
+            </button>
           </li>
           <li className="portfolio__li">
-            <a href="/" className="portfolio__a">
+            <button className="portfolio_a">
               Logo
-            </a>
+            </button>
           </li>
           <li className="portfolio__li">
-            <a href="/" className="portfolio__a">
+            <button className="portfolio__a">
               Branding
-            </a>
+            </button>
           </li>
         </ul>
         <div className="portfolio__container">

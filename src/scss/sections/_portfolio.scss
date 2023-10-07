@@ -37,7 +37,8 @@
     color: var(--Black);
     font: var(--H4);
     text-transform: capitalize;
-    &__active {
+    transition: var(--transition);
+    &:hover {
       color: var(--Yellow);
     }
   }
@@ -75,8 +76,8 @@
       z-index: 1;
       content: "";
       position: absolute;
-      width: 310rem;
-      height: 300rem;
+      width: 100%;
+      height: 100%;
       background: var(--Yellow-2, rgba(255, 180, 0, 0.95));
     }
   }
