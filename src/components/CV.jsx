@@ -35,15 +35,12 @@ export const CV = () => {
     const pdf = new jsPDF();
     const pageWidth = pdf.internal.pageSize.getWidth();
     const pageHeight = pdf.internal.pageSize.getHeight();
-
-    // Get the content of the .cv element
     const cvElement = document.querySelector(".cv");
 
     html2canvas(cvElement).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
 
-      // Calculate the size and position to center the image on the page
-      const imgWidth = pageWidth * 0.3; // You can adjust the scale factor as needed
+      const imgWidth = pageWidth * 0.3;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       const xPosition = (pageWidth - imgWidth) / 2;
       const yPosition = (pageHeight - imgHeight) / 2;
@@ -62,12 +59,24 @@ export const CV = () => {
           <h4 className="cv__name">Rayan Adlardard</h4>
           <p className="cv__profession">Font-end Developer</p>
           <div className="cv__socials">
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
-            <img src={twitter} alt="twitter" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={youtube} alt="youtube" />
-            <img src={dribbble} alt="dribbble" />
+            <a href="https://www.facebook.com/" className="cv__a">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/" className="cv__a">
+              <img src={instagram} alt="instagram" />
+            </a>
+            <a href="https://twitter.com/?lang=ru" className="cv__a">
+              <img src={twitter} alt="twitter" />
+            </a>
+            <a href="https://ua.linkedin.com/" className="cv__a">
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href="https://www.youtube.com/?gl=UA&hl=ru" className="cv__a">
+              <img src={youtube} alt="youtube" />
+            </a>
+            <a href="https://dribbble.com/" className="cv__a">
+              <img src={dribbble} alt="dribbble" />
+            </a>
           </div>
         </div>
 

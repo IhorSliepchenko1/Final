@@ -1,0 +1,14 @@
+.light {
+  display: none;
+  cursor: pointer;
+  &._active {
+    display: block;
+  }
+}
+
+.dark {
+  cursor: pointer;
+  &._active {
+    display: none;
+  }
+}

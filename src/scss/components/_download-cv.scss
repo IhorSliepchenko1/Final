@@ -1,7 +1,7 @@
 .cv {
   background: var(--White);
   padding: 50px 45px 25px 40px;
-    max-width: 305px;
+  max-width: 305px;
 
   &__avatar {
     text-align: center;
@@ -51,6 +51,13 @@
     img {
       width: 24px;
       height: 24px;
+      transition: var(--transition);
+
+      &:hover {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+      }
     }
   }
 
@@ -189,6 +196,11 @@
     align-items: center;
     padding: 10px 40px;
     background: var(--Yellow);
+    transition: var(--transition);
+
+    &:hover {
+      background: #e7af2d;
+    }
   }
 
   &__btn-title {
