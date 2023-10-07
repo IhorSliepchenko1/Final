@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <wrapper className="wrapper">
+     <wrapper className="wrapper">
         <div className="content">
           <CV />
           <main className="main">
