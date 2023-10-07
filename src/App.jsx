@@ -17,10 +17,9 @@ function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <div className="wrapper">
+      <wrapper className="wrapper">
         <CV />
-
-        <div className="container">
+        <main className="main">
           <Rayan />
           <Services />
           <Price />
@@ -31,10 +30,9 @@ function App() {
           <Blog />
           <Map />
           <Footer />
-        </div>
-        
+        </main>
         <NavBar />
-      </div>
+      </wrapper>
     </>
   );
 }

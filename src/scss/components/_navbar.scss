@@ -1,11 +1,11 @@
 .nav-bar {
-  position: sticky;
-  top: 0;
   display: grid;
   padding: 50px 34px 568px 34px;
   background: var(--White-font);
   box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
   gap: 212px;
+  height: fit-content;
+  max-width: 108px;
 
   &__mode {
     text-align: center;

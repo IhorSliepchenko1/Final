@@ -12,7 +12,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className="nav-bar container">
+      <nav className="nav-bar">
         <div className="nav-bar__mode">
           <img
             className="light"
