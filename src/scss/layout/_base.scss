@@ -16,7 +16,7 @@ html {
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
 }
 body {
   font-family: var(--ff);
@@ -29,6 +29,9 @@ body {
   @include mobile {
     padding: 15px;
   }
+}
+.wrapper {
+  position: relative;
 }
 
 .main {

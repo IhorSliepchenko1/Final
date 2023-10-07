@@ -10,6 +10,7 @@ import { WorkHistory } from "./sections/WorkHistory";
 import { Portfolio } from "./sections/Portfolio";
 import { Blog } from "./sections/Blog";
 import { Map } from "./sections/Map";
+import { Logo } from "./sections/Logo";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/NavBar";
 
@@ -17,7 +18,7 @@ function App() {
   useEffect(() => {}, []);
   return (
     <>
-     <wrapper className="wrapper">
+      <wrapper className="wrapper">
         <div className="content">
           <CV />
           <main className="main">
@@ -30,6 +31,7 @@ function App() {
             <Portfolio />
             <Blog />
             <Map />
+            <Logo />
           </main>
           <NavBar />
         </div>
