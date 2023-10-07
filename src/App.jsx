@@ -18,20 +18,23 @@ function App() {
   return (
     <>
       <wrapper className="wrapper">
-        <CV />
-        <main className="main">
-          <Rayan />
-          <Services />
-          <Price />
-          <Recommendations />
-          <Education />
-          <WorkHistory />
-          <Portfolio />
-          <Blog />
-          <Map />
-          <Footer />
-        </main>
-        <NavBar />
+        <div className="content">
+          <CV />
+          <main className="main">
+            <Rayan />
+            <Services />
+            <Price />
+            <Recommendations />
+            <Education />
+            <WorkHistory />
+            <Portfolio />
+            <Blog />
+            <Map />
+          </main>
+          <NavBar />
+        </div>
+
+        <Footer />
       </wrapper>
     </>
   );
