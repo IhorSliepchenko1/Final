@@ -1,14 +1,53 @@
-.light {
-  display: none;
-  cursor: pointer;
-  &._active {
-    display: block;
-  }
-}
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: grid;
+  padding: 50px 34px 568px 34px;
+  background: var(--White-font);
+  box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
+  gap: 212px;
 
-.dark {
-  cursor: pointer;
-  &._active {
-    display: none;
+  &__mode {
+    text-align: center;
+    .light {
+      display: none;
+      cursor: pointer;
+
+      width: 25px;
+      height: 25px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      &._active {
+        display: block;
+      }
+    }
+
+    .dark {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      &._active {
+        display: none;
+      }
+    }
+  }
+  &__ul {
+    display: grid;
+    gap: 43px;
+  }
+
+  circle {
+    transition: var(--transition);
+
+    &:hover {
+      fill: var(--Yellow, #ffb400);
+    }
   }
 }

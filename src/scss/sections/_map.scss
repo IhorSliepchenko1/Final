@@ -1,4 +1,10 @@
 .map {
   width: 970rem;
   height: 300px;
+
+  &__logo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -22,7 +22,6 @@ body {
   font-family: var(--ff);
   padding: 30px;
   background: var(--Background);
-  transition: background 0.5s;
 
   @include mobile {
     padding: 15px;
@@ -38,6 +37,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   max-width: 1440px;
   margin-inline: auto;
 

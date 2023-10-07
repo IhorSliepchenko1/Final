@@ -59,22 +59,26 @@ export const CV = () => {
           <h4 className="cv__name">Rayan Adlardard</h4>
           <p className="cv__profession">Font-end Developer</p>
           <div className="cv__socials">
-            <a href="https://www.facebook.com/" className="cv__a">
+            <a target="/" href="https://www.facebook.com/" className="cv__a">
               <img src={facebook} alt="facebook" />
             </a>
-            <a href="https://www.instagram.com/" className="cv__a">
+            <a target="/" href="https://www.instagram.com/" className="cv__a">
               <img src={instagram} alt="instagram" />
             </a>
-            <a href="https://twitter.com/?lang=ru" className="cv__a">
+            <a target="/" href="https://twitter.com/?lang=ru" className="cv__a">
               <img src={twitter} alt="twitter" />
             </a>
             <a href="https://ua.linkedin.com/" className="cv__a">
               <img src={linkedin} alt="linkedin" />
             </a>
-            <a href="https://www.youtube.com/?gl=UA&hl=ru" className="cv__a">
+            <a
+              target="/"
+              href="https://www.youtube.com/?gl=UA&hl=ru"
+              className="cv__a"
+            >
               <img src={youtube} alt="youtube" />
             </a>
-            <a href="https://dribbble.com/" className="cv__a">
+            <a target="/" href="https://dribbble.com/" className="cv__a">
               <img src={dribbble} alt="dribbble" />
             </a>
           </div>
