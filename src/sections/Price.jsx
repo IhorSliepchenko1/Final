@@ -57,14 +57,18 @@ export const Price = () => {
                 <p className="plan__service">20 gB bandwith</p>
               </li>
             </ul>
-            <button className="plan__btn">
-              <a className="plan__a" href="/">
-                ORDER NOW
-              </a>
-            </button>
+            <form className="plan__form">
+              <button className="plan__btn">
+                <a className="plan__a" href="/">
+                  ORDER NOW
+                </a>
+              </button>
+            </form>
           </div>
-          <div className="price__item plan">
-            <p className="plan__popular">most popular</p>
+          <div className="price__item plan most">
+            <div className="plan__header">
+              <p className="plan__popular">most popular</p>
+            </div>
             <h3 className="plan__title">gold</h3>
             <div className="plan__prices">
               <h2 className="plan__subtitle">$50.00</h2>
@@ -108,11 +112,13 @@ export const Price = () => {
                 <p className="plan__service">20 gB bandwith</p>
               </li>
             </ul>
-            <button className="plan__btn _active">
-              <a className="plan__a" href="/">
-                ORDER NOW
-              </a>
-            </button>
+            <form className="plan__form">
+              <button className="plan__btn active">
+                <a className="plan__a" href="/">
+                  ORDER NOW
+                </a>
+              </button>
+            </form>
           </div>
           <div className="price__item plan">
             <h3 className="plan__title">dimond</h3>
@@ -158,11 +164,13 @@ export const Price = () => {
                 <p className="plan__service-on">20 gB bandwith</p>
               </li>
             </ul>
-            <button className="plan__btn">
-              <a className="plan__a" href="/">
-                ORDER NOW
-              </a>
-            </button>
+            <form className="plan__form">
+              <button className="plan__btn">
+                <a className="plan__a" href="/">
+                  ORDER NOW
+                </a>
+              </button>
+            </form>
           </div>
         </div>
       </section>
