@@ -6,7 +6,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="footer container">
+    <footer className="footer">
       <div className="footer__copyright">
         <span id="year"></span> All Rights Reserved.Ojjomedia
       </div>

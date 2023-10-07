@@ -17,24 +17,25 @@ function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <div className="wrapper">
-        <CV />
-
-        <div className="container">
-          <Rayan />
-          <Services />
-          <Price />
-          <Recommendations />
-          <Education />
-          <WorkHistory />
-          <Portfolio />
-          <Blog />
-          <Map />
-          <Footer />
+      <wrapper className="wrapper">
+        <div className="content">
+          <CV />
+          <main className="main">
+            <Rayan />
+            <Services />
+            <Price />
+            <Recommendations />
+            <Education />
+            <WorkHistory />
+            <Portfolio />
+            <Blog />
+            <Map />
+          </main>
+          <NavBar />
         </div>
-        
-        <NavBar />
-      </div>
+
+        <Footer />
+      </wrapper>
     </>
   );
 }

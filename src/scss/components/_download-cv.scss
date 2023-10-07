@@ -1,6 +1,7 @@
 .cv {
   background: var(--White);
-  padding: 50px 45px 25px 40px;
+  padding: 50rem 45rem 25rem 40rem;
+  height: fit-content;
   max-width: 305px;
 
   &__avatar {
@@ -42,7 +43,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 220px;
+      width: 220rem;
       height: 1.5px;
       background: var(--Background);
       bottom: 0;
@@ -69,7 +70,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 220px;
+      width: 220rem;
       height: 1.5px;
       background: var(--Background);
       bottom: 0;
@@ -108,7 +109,7 @@
     &::before {
       position: absolute;
       content: "";
-      width: 220px;
+      width: 220rem;
       height: 1.5px;
       background: var(--Background);
       bottom: 0;
@@ -148,7 +149,7 @@
 
   &__language-progress,
   &__skill-progress {
-    max-width: 220px;
+    max-width: 220rem;
     height: 6px;
     border: 1px solid var(--Yellow);
     border-radius: 10px;
@@ -163,7 +164,7 @@
 
   &__language-line,
   &__skill-line {
-    max-width: 220px;
+    max-width: 220rem;
     height: 2px;
     background: var(--Yellow);
     border-radius: 10px;
@@ -199,7 +200,7 @@
     transition: var(--transition);
 
     &:hover {
-      background: #e7af2d;
+      background: #f5c24c;
     }
   }
 
