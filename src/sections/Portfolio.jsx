@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Img1 from "../assets/img/1.png";
 import Img2 from "../assets/img/2.png";
 import Img3 from "../assets/img/3.png";
@@ -7,20 +8,42 @@ import Img6 from "../assets/img/6.png";
 import Img7 from "../assets/img/7.png";
 import Img8 from "../assets/img/8.png";
 import Img9 from "../assets/img/9.png";
-// import { Plus } from "../components/UI/Plus";
 
 export const Portfolio = () => {
-  function navToggle(buttonId) {
-    const buttons = document.querySelectorAll(".portfolio__a");
+  const [currentCategory, setCurrentCategory] = useState("all");
 
-    buttons.forEach((button) => {
-      if (button.id === buttonId) {
-        button.classList.add("a__active");
-      } else {
-        button.classList.remove("a__active");
-      }
-    });
+  function navToggle(buttonId) {
+    setCurrentCategory(buttonId);
   }
+
+  const filteredImages = [
+    { id: 1, src: Img1, category: "all" },
+    { id: 2, src: Img2, category: "ui" },
+    { id: 3, src: Img3, category: "web" },
+    { id: 4, src: Img4, category: "logo" },
+    { id: 5, src: Img5, category: "brand" },
+    { id: 6, src: Img6, category: "ui" },
+    { id: 7, src: Img7, category: "web" },
+    { id: 8, src: Img8, category: "logo" },
+    { id: 9, src: Img9, category: "brand" },
+  ];
+
+  const filteredImagesByCategory =
+    currentCategory === "all"
+      ? filteredImages
+      : filteredImages.filter((img) => img.category === currentCategory);
+
+  const imageElements = filteredImagesByCategory.map((img) => (
+    <img
+      key={img.id}
+      className="portfolio__img"
+      width="310px"
+      height="300"
+      src={img.src}
+      alt={`img${img.id}`}
+    />
+  ));
+
   return (
     <>
       <section className="portfolio">
@@ -36,7 +59,9 @@ export const Portfolio = () => {
             <button
               onClick={() => navToggle("all")}
               id="all"
-              className="portfolio__a a__active"
+              className={`portfolio__a ${
+                currentCategory === "all" ? "a__active" : ""
+              }`}
             >
               All categories
             </button>
@@ -45,7 +70,9 @@ export const Portfolio = () => {
             <button
               onClick={() => navToggle("ui")}
               id="ui"
-              className="portfolio__a"
+              className={`portfolio__a ${
+                currentCategory === "ui" ? "a__active" : ""
+              }`}
             >
               UI Design
             </button>
@@ -54,7 +81,9 @@ export const Portfolio = () => {
             <button
               onClick={() => navToggle("web")}
               id="web"
-              className="portfolio__a"
+              className={`portfolio__a ${
+                currentCategory === "web" ? "a__active" : ""
+              }`}
             >
               Web Templates
             </button>
@@ -63,7 +92,9 @@ export const Portfolio = () => {
             <button
               onClick={() => navToggle("logo")}
               id="logo"
-              className="portfolio__a"
+              className={`portfolio__a ${
+                currentCategory === "logo" ? "a__active" : ""
+              }`}
             >
               Logo
             </button>
@@ -72,29 +103,24 @@ export const Portfolio = () => {
             <button
               onClick={() => navToggle("brand")}
               id="brand"
-              className="portfolio__a"
+              className={`portfolio__a ${
+                currentCategory === "brand" ? "a__active" : ""
+              }`}
             >
               Branding
             </button>
           </li>
         </ul>
         <div className="portfolio__container">
-          <div className="slot">
-            <img width="310px" height="300" src={Img1} alt="img1" />
-            <img width="310px" height="300" src={Img4} alt="img4" />
-            <img width="310px" height="300" src={Img7} alt="img7" />
-          </div>
-
-          <div className="slot">
-            <img width="310px" height="300" src={Img2} alt="img2" />
-            <img width="310px" height="300" src={Img5} alt="img5" />
-            <img width="310px" height="300" src={Img8} alt="img8" />
-          </div>
-          <div className="slot">
-            <img width="310px" height="300" src={Img3} alt="img7" />
-            <img width="310px" height="300" src={Img6} alt="img8" />
-            <img width="310px" height="300" src={Img9} alt="img9" />
-          </div>
+          <img width="310px" height="300" src={Img1} alt="img1" />
+          <img width="310px" height="300" src={Img2} alt="img2" />
+          <img width="310px" height="300" src={Img3} alt="img3" />
+          <img width="310px" height="300" src={Img4} alt="img4" />
+          <img width="310px" height="300" src={Img5} alt="img5" />
+          <img width="310px" height="300" src={Img6} alt="img6" />
+          <img width="310px" height="300" src={Img7} alt="img7" />
+          <img width="310px" height="300" src={Img8} alt="img8" />
+          <img width="310px" height="300" src={Img9} alt="img9" />
         </div>
       </section>
     </>

@@ -1,6 +1,9 @@
 .portfolio {
   margin: 70rem 0 70rem 0;
 
+  &__img{
+    object-fit: cover;
+  }
   &__header {
     display: flex;
     margin: 0 0 50rem 0;
