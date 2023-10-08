@@ -18,9 +18,9 @@ function App() {
   useEffect(() => {}, []);
   return (
     <>
-      <wrapper className="wrapper">
+      <div className="wrapper">
+        <CV />
         <div className="content">
-          <CV />
           <main className="main">
             <Rayan />
             <Services />
@@ -33,11 +33,10 @@ function App() {
             <Map />
             <Logo />
           </main>
-          <NavBar />
+          <Footer />
         </div>
-
-        <Footer />
-      </wrapper>
+        <NavBar />
+      </div>
     </>
   );
 }

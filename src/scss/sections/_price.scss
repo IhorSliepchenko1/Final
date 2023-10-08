@@ -26,9 +26,12 @@
   }
 
   &__container {
-    display: grid;
+    display: flex;
     gap: 20rem;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    @include desktop {
+      display: grid;
+      justify-content: center;
+    }
   }
 
   &__item {

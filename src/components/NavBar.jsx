@@ -1,6 +1,7 @@
 import dark_mode from "../assets/icons/dark_mode.svg";
 import light_mode from "../assets/icons/light_mode.svg";
-
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 export const NavBar = () => {
   function LightMode() {
     const lightElement = document.getElementById("light");
@@ -9,6 +10,26 @@ export const NavBar = () => {
     lightElement.classList.toggle("_active");
     darkElement.classList.toggle("_active");
   }
+
+  const downloadPDF = () => {
+    const pdf = new jsPDF();
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const cvElement = document.querySelector(".cv");
+
+    html2canvas(cvElement).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+
+      const imgWidth = pageWidth * 0.3;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const xPosition = (pageWidth - imgWidth) / 2;
+      const yPosition = (pageHeight - imgHeight) / 2;
+
+      pdf.addImage(imgData, "PNG", xPosition, yPosition, imgWidth, imgHeight);
+
+      pdf.save("cv.pdf");
+    });
+  };
 
   return (
     <>
@@ -28,6 +49,21 @@ export const NavBar = () => {
             src={dark_mode}
             alt="dark_mode"
           />
+
+          <div className="download" onClick={downloadPDF}>
+            <svg
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 16H18V9H20V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V9H2V16ZM12 6H17L10 13L3 6H8V0H12V6Z"
+                fill="#2B2B2B"
+              />
+            </svg>
+          </div>
         </div>
 
         <ul className="nav-bar__ul">

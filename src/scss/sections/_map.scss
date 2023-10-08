@@ -1,17 +1,8 @@
 .map {
-  width: 970px;
+  max-width: 970rem;
   height: 300px;
 
-  @include desktop {
-    max-width: 700px;
-    height: 500px;
-  }
-
-  @include desktop-small {
-    max-width: 500px;
-  }
   @include tablet {
-    display: none;
+    height: 700px;
   }
-
 }

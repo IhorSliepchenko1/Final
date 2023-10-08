@@ -24,34 +24,40 @@ body {
 
   @include desktop {
     padding: 0 20px 0 20px;
-    overflow: hidden;
   }
   @include mobile {
     padding: 15px;
   }
 }
-.wrapper {
-  position: relative;
-}
 
-.main {
+.content {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .container {
   max-width: 970px;
+
+  @include tablet {
+    max-width: calc(970px - 219px);
+  }
 }
 
-.content {
+.wrapper {
   margin-inline: auto;
-  overflow: hidden;
   max-width: 1440px;
   display: flex;
   gap: 30px;
+  @include tablet {
+    max-width: calc(1440px - 219px);
+    justify-content: end;
+    gap: 0;
+  }
+}
 
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
+.main {
+  @include tablet {
+    padding-right: 20px;
   }
 }
