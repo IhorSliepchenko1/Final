@@ -10,6 +10,17 @@ import Img9 from "../assets/img/9.png";
 import { Plus } from "../components/UI/Plus";
 
 export const Portfolio = () => {
+  function navToggle(buttonId) {
+    const buttons = document.querySelectorAll(".portfolio__a");
+
+    buttons.forEach((button) => {
+      if (button.id === buttonId) {
+        button.classList.add("a__active");
+      } else {
+        button.classList.remove("a__active");
+      }
+    });
+  }
   return (
     <>
       <section className="portfolio">
@@ -22,27 +33,47 @@ export const Portfolio = () => {
         </div>
         <ul className="portfolio__ul">
           <li className="portfolio__li">
-            <button className="portfolio__a a__active">
+            <button
+              onClick={() => navToggle("all")}
+              id="all"
+              className="portfolio__a a__active"
+            >
               All categories
             </button>
           </li>
           <li className="portfolio__li">
-            <button className="portfolio__a">
+            <button
+              onClick={() => navToggle("ui")}
+              id="ui"
+              className="portfolio__a"
+            >
               UI Design
             </button>
           </li>
           <li className="portfolio__li">
-            <button className="portfolio__a">
+            <button
+              onClick={() => navToggle("web")}
+              id="web"
+              className="portfolio__a"
+            >
               Web Templates
             </button>
           </li>
           <li className="portfolio__li">
-            <button className="portfolio_a">
+            <button
+              onClick={() => navToggle("logo")}
+              id="logo"
+              className="portfolio__a"
+            >
               Logo
             </button>
           </li>
           <li className="portfolio__li">
-            <button className="portfolio__a">
+            <button
+              onClick={() => navToggle("brand")}
+              id="brand"
+              className="portfolio__a"
+            >
               Branding
             </button>
           </li>
