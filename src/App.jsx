@@ -4,7 +4,7 @@ import { CV } from "./components/CV";
 import { Rayan } from "./sections/Rayan";
 import { Services } from "./sections/Services";
 import { Price } from "./sections/Price";
-import { Recommendations } from "./sections/Recommendations";
+// import { Recommendations } from "./sections/Recommendations";
 import { Education } from "./sections/Education";
 import { WorkHistory } from "./sections/WorkHistory";
 import { Portfolio } from "./sections/Portfolio";
@@ -25,7 +25,7 @@ function App() {
             <Rayan />
             <Services />
             <Price />
-            <Recommendations />
+            {/* <Recommendations /> */}
             <Education />
             <WorkHistory />
             <Portfolio />
