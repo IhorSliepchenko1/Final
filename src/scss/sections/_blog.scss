@@ -1,0 +1,52 @@
+.blog {
+  margin-bottom: 70rem;
+
+  &__title {
+    font: var(--H2);
+    color: var(--Black);
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 33rem;
+  }
+
+  &__desc {
+    font: var(--Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 428rem;
+    margin-bottom: 50rem;
+  }
+
+  &__article {
+    display: flex;
+    align-items: flex-start;
+    gap: 20rem;
+  }
+}
+
+.item {
+  &__info {
+    padding: 25rem 36rem 18rem 25rem;
+    background-color: var(--White);
+  }
+
+  &__title {
+    font: var(--H4);
+    color: var(--Black);
+    text-align: left;
+  }
+
+  &__desc {
+    font: var(--Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  &__link {
+    display: flex;
+    font: var(--H4);
+    color: var(--Yellow);
+  }
+}
