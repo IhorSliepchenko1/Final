@@ -1,9 +1,6 @@
 .portfolio {
   margin: 70rem 0 70rem 0;
 
-  &__img{
-    object-fit: cover;
-  }
   &__header {
     display: flex;
     margin: 0 0 50rem 0;
@@ -36,14 +33,14 @@
     gap: 37rem;
     margin-bottom: 50px;
 
-    @include tablet {
+    @include mobile {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
     }
   }
   &__li {
-    @include tablet {
+    @include mobile {
       text-align: center;
     }
   }
@@ -56,16 +53,21 @@
   }
 
   &__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    justify-content: center;
 
-    @include tablet {
-      display: grid;
+    @include desktop-small {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include tablet-small {
+      display: block;
+      text-align: center;
     }
 
     img {
-      @include tablet {
+      @include tablet-small {
         max-width: 250px;
         max-height: 250px;
         margin-bottom: 20px;
@@ -108,8 +110,3 @@
 //     }
 //   }
 // }
-
-.slot {
-  display: grid;
-  gap: 20px;
-}

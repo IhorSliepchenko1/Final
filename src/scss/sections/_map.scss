@@ -1,8 +1,12 @@
 .map {
   max-width: 970rem;
   height: 300px;
-display: none;
   @include tablet {
     height: 700px;
+  }
+
+  @include mobile-small {
+    max-width: 400rem;
+    padding: 15px;
   }
 }
