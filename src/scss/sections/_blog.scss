@@ -48,5 +48,8 @@
     display: flex;
     font: var(--H4);
     color: var(--Yellow);
+    svg{
+      margin-top: 2rem;
+    }
   }
 }
