@@ -113,7 +113,7 @@ export const Price = () => {
               </li>
             </ul>
             <form className="plan__form">
-              <button className="plan__btn active">
+              <button className="plan__btn btn__active">
                 <a className="plan__a" href="/">
                   ORDER NOW
                 </a>

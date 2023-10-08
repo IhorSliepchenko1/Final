@@ -38,9 +38,6 @@
     font: var(--H4);
     text-transform: capitalize;
     transition: var(--transition);
-    &:hover {
-      color: var(--Yellow);
-    }
   }
 
   &__container {
