@@ -1,11 +1,18 @@
 .nav-bar {
   display: grid;
-  padding: 50px 34px 568px 34px;
+  padding: 50rem 34rem 568rem 34rem;
   background: var(--White-font);
   box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
   gap: 212px;
   height: fit-content;
   max-width: 108px;
+  position: sticky;
+  top: 0;
+
+  @include tablet {
+    display: block;
+    padding: 30rem 15rem 100rem 15rem;
+  }
 
   &__mode {
     text-align: center;
@@ -37,6 +44,10 @@
         display: none;
       }
     }
+
+    @include tablet {
+      margin-bottom: 45px;
+    }
   }
   &__ul {
     display: grid;
@@ -47,7 +58,17 @@
     transition: var(--transition);
 
     &:hover {
-      fill: var(--Yellow, #ffb400);
+      fill: var(--Yellow);
     }
+  }
+}
+
+.download {
+  text-align: center;
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin-top: 60px;
   }
 }

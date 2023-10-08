@@ -1,0 +1,79 @@
+.section-rec {
+  margin-bottom: 75rem;
+  &__title {
+    margin-top: 70rem;
+    font: var(--H2);
+    color: var(--Black);
+    margin-bottom: 25rem;
+    text-align: center;
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+  &__desc {
+    font: var(--Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
+    text-align: center;
+    max-width: 418rem;
+    margin: 0 auto;
+    margin-bottom: 50rem;
+    text-transform: capitalize;
+  }
+  &__item {
+    max-width: 310rem;
+    padding: 25em;
+    background: var(--White);
+    margin-bottom: 50rem;
+    cursor: grab;
+  }
+  &__item-star {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    cursor: pointer;
+  }
+  &__item-title {
+    margin-top: 17rem;
+    margin-bottom: 18rem;
+    font: var(--H5);
+    color: var(--Black);
+  }
+
+  &__item-text {
+    font: var(--Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
+    margin-bottom: 30rem;
+    text-transform: capitalize;
+  }
+
+  &__item-about {
+    display: flex;
+    align-items: center;
+    gap: 31rem;
+  }
+
+  &__about-image {
+    max-width: 80rem;
+    max-height: 80rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+  }
+
+  &__about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info-name {
+    font: var(--H5);
+    color: var(--Black);
+    margin-bottom: 5rem;
+    white-space: nowrap;
+  }
+
+  &__info-role {
+    font: var(--Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
+  }
+}

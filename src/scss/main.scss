@@ -3,6 +3,7 @@
 @import "utils/fonts";
 @import "utils/mixins";
 @import "utils/vars";
+@import "utils/swiper";
 
 // vendors
 @import "vendors/reset";
@@ -29,6 +30,7 @@
 @import "sections/recommendations";
 @import "sections/work-history";
 @import "sections/your-info";
+@import "sections/logo";
 
 // components - footer
 @import "components/footer";

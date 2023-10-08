@@ -7,7 +7,7 @@ import Img6 from "../assets/img/6.png";
 import Img7 from "../assets/img/7.png";
 import Img8 from "../assets/img/8.png";
 import Img9 from "../assets/img/9.png";
-import { Plus } from "../components/UI/Plus";
+// import { Plus } from "../components/UI/Plus";
 
 export const Portfolio = () => {
   function navToggle(buttonId) {
@@ -129,22 +129,7 @@ export const Portfolio = () => {
           </li>
         </ul>
         <div className="portfolio__container">
-          <div className="portfolio__avatar">
-            <div className="portfolio__border">
-              <div className="portfolio__border-bg"></div>
-
-              <button>
-                <Plus />
-                <img
-                  className="portfolio__img"
-                  width="310px"
-                  height="300"
-                  src={Img1}
-                  alt="img1"
-                />
-              </button>
-            </div>
-          </div>
+          <img width="310px" height="300" src={Img1} alt="img1" />
           <img width="310px" height="300" src={Img2} alt="img2" />
           <img width="310px" height="300" src={Img3} alt="img3" />
           <img width="310px" height="300" src={Img4} alt="img4" />

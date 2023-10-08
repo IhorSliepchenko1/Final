@@ -4,6 +4,10 @@
   height: fit-content;
   max-width: 305px;
 
+  @include tablet {
+    display: none;
+  }
+
   &__avatar {
     text-align: center;
 
@@ -24,7 +28,7 @@
 
   &__profession {
     text-align: center;
-    color: var(--Paragraph-Font, #767676);
+    color: var(--Paragraph-Font);
     font-kerning: none;
     font-feature-settings: "calt" off;
     font: var(--Paragraph_Progress-15);
@@ -131,7 +135,7 @@
 
   &__language-name,
   &__skill-name {
-    color: var(--Paragraph-Font, #767676);
+    color: var(--Paragraph-Font);
     font-kerning: none;
     font-feature-settings: "calt" off;
     font: var(--Paragraph_Progress-15);
@@ -140,7 +144,7 @@
 
   &__language-value,
   &__skill-value {
-    color: var(--Paragraph-Font, #767676);
+    color: var(--Paragraph-Font);
     font-kerning: none;
     font-feature-settings: "calt" off;
     font: var(--Paragraph_Progress-15);
@@ -205,7 +209,7 @@
   }
 
   &__btn-title {
-    color: var(--Black, #2b2b2b);
+    color: var(--Black);
     font-family: var(--ff);
     font-size: 14px;
     font-weight: 600;
