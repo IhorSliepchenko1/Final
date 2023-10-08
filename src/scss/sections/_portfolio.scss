@@ -66,47 +66,9 @@
       text-align: center;
     }
 
-    // img {
-    //   @include tablet-small {
-    //     max-width: 250px;
-    //     max-height: 250px;
-    //     margin-bottom: 20px;
 
-    //     &:last-child {
-    //       margin-bottom: 0;
-    //     }
-    //   }
-    // }
   }
 }
 .a__active {
   color: var(--Yellow);
 }
-// .portfolio {
-//   &__plus {
-//     position: absolute;
-//     z-index: 2;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
-//   &__img {
-//     position: relative;
-//     user-select: none;
-//   }
-
-//   &__border {
-//     position: relative;
-//   }
-
-//   &__border-bg {
-//     &::before {
-//       z-index: 1;
-//       content: "";
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       background: var(--Yellow-2, rgba(255, 180, 0, 0.95));
-//     }
-//   }
-// }

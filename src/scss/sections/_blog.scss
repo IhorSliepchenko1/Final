@@ -39,6 +39,7 @@
       max-width: 310px;
       display: grid;
       margin-inline: auto;
+      text-align: left;
     }
   }
 
@@ -59,7 +60,7 @@
     display: flex;
     font: var(--H4);
     color: var(--Yellow);
-    svg{
+    svg {
       margin-top: 2rem;
     }
   }
