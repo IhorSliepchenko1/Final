@@ -22,6 +22,11 @@
     display: flex;
     align-items: flex-start;
     gap: 20rem;
+
+    @include tablet {
+      display: grid;
+      text-align: center;
+    }
   }
 }
 
@@ -29,6 +34,12 @@
   &__info {
     padding: 25rem 36rem 18rem 25rem;
     background-color: var(--White);
+
+    @include tablet {
+      max-width: 310px;
+      display: grid;
+      margin-inline: auto;
+    }
   }
 
   &__title {

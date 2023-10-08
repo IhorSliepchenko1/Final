@@ -79,15 +79,22 @@ export const Portfolio = () => {
           </li>
         </ul>
         <div className="portfolio__container">
-          <img width="310px" height="300" src={Img1} alt="img1" />
-          <img width="310px" height="300" src={Img2} alt="img2" />
-          <img width="310px" height="300" src={Img3} alt="img3" />
-          <img width="310px" height="300" src={Img4} alt="img4" />
-          <img width="310px" height="300" src={Img5} alt="img5" />
-          <img width="310px" height="300" src={Img6} alt="img6" />
-          <img width="310px" height="300" src={Img7} alt="img7" />
-          <img width="310px" height="300" src={Img8} alt="img8" />
-          <img width="310px" height="300" src={Img9} alt="img9" />
+          <div className="slot">
+            <img width="310px" height="300" src={Img1} alt="img1" />
+            <img width="310px" height="300" src={Img4} alt="img4" />
+            <img width="310px" height="300" src={Img7} alt="img7" />
+          </div>
+
+          <div className="slot">
+            <img width="310px" height="300" src={Img2} alt="img2" />
+            <img width="310px" height="300" src={Img5} alt="img5" />
+            <img width="310px" height="300" src={Img8} alt="img8" />
+          </div>
+          <div className="slot">
+            <img width="310px" height="300" src={Img3} alt="img7" />
+            <img width="310px" height="300" src={Img6} alt="img8" />
+            <img width="310px" height="300" src={Img9} alt="img9" />
+          </div>
         </div>
       </section>
     </>

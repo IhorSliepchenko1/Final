@@ -1,5 +1,21 @@
+.reccomendations {
+  @media (max-width: 992px) {
+    text-align: -webkit-right;
+  }
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.swiper-wrapper {
+  @media (max-width: 800px) {
+    text-align: -webkit-center;
+  }
+}
 .section-rec {
   margin-bottom: 75rem;
+
   &__title {
     margin-top: 70rem;
     font: var(--H2);

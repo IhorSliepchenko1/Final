@@ -1,7 +1,7 @@
 .map {
   max-width: 970rem;
   height: 300px;
-
+display: none;
   @include tablet {
     height: 700px;
   }

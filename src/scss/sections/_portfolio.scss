@@ -33,14 +33,14 @@
     gap: 37rem;
     margin-bottom: 50px;
 
-    @include mobile {
+    @include tablet {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
     }
   }
   &__li {
-    @include mobile {
+    @include tablet {
       text-align: center;
     }
   }
@@ -53,21 +53,16 @@
   }
 
   &__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 20px;
+    justify-content: center;
 
-    @include desktop-small {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @include tablet-small {
-      display: block;
-      text-align: center;
+    @include tablet {
+      display: grid;
     }
 
     img {
-      @include tablet-small {
+      @include tablet {
         max-width: 250px;
         max-height: 250px;
         margin-bottom: 20px;
@@ -110,3 +105,8 @@
 //     }
 //   }
 // }
+
+.slot {
+  display: grid;
+  gap: 20px;
+}

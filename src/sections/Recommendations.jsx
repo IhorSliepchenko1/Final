@@ -31,7 +31,7 @@ export const Recommendations = () => {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            768: {
+            800: {
               slidesPerView: 2,
               spaceBetween: 30,
             },
