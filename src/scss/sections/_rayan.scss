@@ -7,6 +7,13 @@
   gap: 26rem;
   background-color: var(--White);
 
+  @include desktop-small {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+
   &__title {
     font: var(--H1);
     color: var(--Black);
@@ -14,6 +21,10 @@
     max-width: 500rem;
     margin-top: 93rem;
     margin-bottom: 18rem;
+
+    @include tablet {
+      margin-top: 40rem;
+    }
   }
 
   &__desc {
@@ -30,6 +41,10 @@
     display: inline-flex;
     align-items: center;
     gap: 9rem;
+
+    &:hover {
+      background: #f5c24c;
+    }
   }
 
   &__rayan {
