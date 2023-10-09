@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Img1 from "../assets/img/1.png";
-import Img2 from "../assets/img/2.png";
-import Img3 from "../assets/img/3.png";
-import Img4 from "../assets/img/4.png";
-import Img5 from "../assets/img/5.png";
-import Img6 from "../assets/img/6.png";
-import Img7 from "../assets/img/7.png";
-import Img8 from "../assets/img/8.png";
-import Img9 from "../assets/img/9.png";
+import Img1 from "../assets/img/1.jpg";
+import Img2 from "../assets/img/2.jpg";
+import Img3 from "../assets/img/3.jpg";
+import Img4 from "../assets/img/4.jpg";
+import Img5 from "../assets/img/5.jpg";
+import Img6 from "../assets/img/6.jpg";
+import Img7 from "../assets/img/7.jpg";
+import Img8 from "../assets/img/8.jpg";
+import Img9 from "../assets/img/9.jpg";
 
 export const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState("all");

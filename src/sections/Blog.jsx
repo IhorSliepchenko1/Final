@@ -1,6 +1,6 @@
-import Img1 from "../assets/img/1.png";
-import Img2 from "../assets/img/2.png";
-import Img3 from "../assets/img/3.png";
+import Img1 from "../assets/img/1.jpg";
+import Img2 from "../assets/img/2.jpg";
+import Img3 from "../assets/img/3.jpg";
 
 export const Blog = () => {
   return (
