@@ -5,8 +5,8 @@
     height: 700px;
   }
 
-  @include mobile-small {
-    max-width: 400rem;
+  @include mobile {
+    max-width: 500rem;
     padding: 15px;
   }
 }

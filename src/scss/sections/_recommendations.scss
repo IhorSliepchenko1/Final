@@ -1,10 +1,13 @@
 .reccomendations {
-  @media (max-width: 992px) {
-    text-align: -webkit-right;
-  }
+  margin-inline: auto;
+ 
 
   @media (max-width: 800px) {
-    display: block;
+    margin-inline: auto;
+  }
+
+  @include mobile{
+    max-width: 250px;
   }
 }
 
