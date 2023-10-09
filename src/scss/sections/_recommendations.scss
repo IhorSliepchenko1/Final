@@ -1,12 +1,6 @@
 .reccomendations {
   margin-inline: auto;
- 
-
-  @media (max-width: 800px) {
-    margin-inline: auto;
-  }
-
-  @include mobile{
+  @include mobile {
     max-width: 250px;
   }
 }
