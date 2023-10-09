@@ -46,6 +46,10 @@ body {
   @include tablet-800 {
     max-width: calc(970px - 500px);
   }
+
+  @include mobile {
+    max-width: calc(970px - 600px);
+  }
 }
 
 .wrapper {
@@ -61,6 +65,11 @@ body {
 
   @include tablet-800 {
     max-width: calc(1440px - 500px);
+  }
+
+  @include mobile {
+    max-width: calc(1440px - 700px);
+
   }
 }
 
