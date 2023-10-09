@@ -1,0 +1,151 @@
+.work-history {
+    margin-top: 100rem;
+    margin-bottom: 100rem;
+  
+    &__title {
+      color: var(--Black);
+      text-align: center;
+      font: var(--H2);
+      margin-bottom: 25rem;
+    }
+  
+    &__desc {
+      font: var(--Paragraph_Progress-15);
+      color: var(--Paragraph-Font);
+      text-align: center;
+      max-width: 428rem;
+      margin: 0 auto;
+      margin-bottom: 50rem;
+      text-transform: capitalize;
+    }
+  }
+  
+  .block {
+    background: #fff;
+    max-width: 970rem;
+    position: relative;
+  }
+  .my {
+  
+    &::before {
+      content: "";
+      background: #f0f0f6;
+      width: 901rem;
+      height: 1.5rem;
+      position: absolute;
+      left: 40rem;
+      top: 204rem;
+  
+      @include desktop-small {
+        background: #f0f0f6;
+        width: 495rem;
+        height: 1.5rem;
+        top: 355rem;
+      }
+  
+      @include tablet-small {
+        width: 480rem;
+        height: 1.5rem;
+      }
+    }
+    &::after {
+      content: "";
+      background: #f0f0f6;
+      width: 901rem;
+      height: 1.5rem;
+      position: absolute;
+      left: 40rem;
+      display: block;
+  
+      @include desktop-small {
+        background: #f0f0f6;
+        width: 495rem;
+        height: 1.5rem;
+      }
+  
+      @include tablet-small {
+        width: 480rem;
+        height: 1.5rem;
+      }
+  
+      @include mobile {
+        width: 300rem;
+        height: 1.5rem;
+        
+      }
+    }
+  }
+  .block-first {
+    display: flex;
+    gap: 170rem;
+  
+    @include desktop-small {
+      display: flex;
+      gap: 0rem;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      margin-left: 0;
+    }
+  
+    
+  
+    &__title {
+      margin-top: 47rem;
+      margin-bottom: 28rem;
+      margin-left: 37rem;
+  
+      color: var(--Black);
+      font: var(--H4);
+      text-transform: capitalize;
+    }
+    &__span {
+      color: var(--White);
+      font-family: var(--ff);
+      font-size: 10rem;
+      font-weight: 400;
+      line-height: 100.9%; 
+      max-width: 111rem;
+  
+      border-radius: 1rem;
+      background: var(--Yellow);
+      padding: 4rem 7rem;
+  
+  
+    }
+    &__student {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 21rem;
+      margin-left: 37rem;
+  
+      color: var(--Black);
+      font: var(--H6);
+      text-transform: capitalize;
+    }
+  }
+  .block-desc {
+    &__title {
+      color: var(--Black);
+      margin-top: 47rem;
+      margin-bottom: 28rem;
+      font: var(--H4);
+      
+      text-transform: capitalize;
+      padding-left: 40rem;
+    }
+  
+    &__desc {
+      font: var(--Paragraph_Progress-15);
+      max-width: 536rem;
+      color: var(--Paragraph-Font);
+      
+      line-height: 24rem; 
+      text-transform: capitalize;
+      padding-bottom: 11rem;
+      padding-left: 40rem;
+      padding-bottom: 42rem;
+    }
+  }
+  
