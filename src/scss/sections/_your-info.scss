@@ -1,0 +1,94 @@
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts {
+  &__name {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.container {
+}
+.forms {
+  display: grid;
+  font: var(--Paragraph_Progress-15);
+  color: var(--Paragraph-Font);
+
+  &__name {
+  }
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  font: var(--Paragraph_Progress-15);
+  color: var(--Paragraph-Font);
+
+  &__item {
+    gap: 20px;
+    display: grid;
+    justify-content: space-between;
+    max-width: 370px;
+    background: #fff;
+  }
+
+  &__countrys {
+  }
+
+  &__country {
+  }
+
+  &__name {
+  }
+
+  &__Citys {
+  }
+
+  &__City {
+  }
+
+  &__desc {
+  }
+
+  &__Streets {
+  }
+
+  &__street {
+  }
+
+  &__Emails {
+  }
+
+  &__Email {
+  }
+
+  &__Skypes {
+  }
+
+  &__Skype {
+  }
+
+  &__Telegrams {
+  }
+
+  &__Telegram {
+  }
+
+  &__Supports {
+  }
+
+  &__Support {
+  }
+
+  &__Offices {
+  }
+
+  &__Office {
+  }
+
+  &__Personals {
+  }
+
+  &__personal {
+  }
+}

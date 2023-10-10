@@ -9,6 +9,8 @@ import { Education } from "./sections/Education";
 import { WorkHistory } from "./sections/WorkHistory";
 import { Portfolio } from "./sections/Portfolio";
 import { Blog } from "./sections/Blog";
+import { YourInfo } from "./sections/YourInfo";
+
 import { Map } from "./sections/Map";
 import { Logo } from "./sections/Logo";
 import { Footer } from "./components/Footer";
@@ -30,6 +32,7 @@ function App() {
             <WorkHistory />
             <Portfolio />
             <Blog />
+            <YourInfo />
             <Map />
             <Logo />
           </main>
