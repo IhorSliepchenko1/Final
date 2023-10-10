@@ -20,13 +20,6 @@
       display: none;
       cursor: pointer;
 
-      width: 25px;
-      height: 25px;
-      img {
-        width: 25px;
-        height: 25px;
-      }
-
       &._active {
         display: block;
       }
@@ -34,12 +27,7 @@
 
     .dark {
       cursor: pointer;
-      width: 25px;
-      height: 25px;
-      img {
-        width: 25px;
-        height: 25px;
-      }
+
       &._active {
         display: none;
       }
@@ -63,12 +51,3 @@
   }
 }
 
-.download {
-  text-align: center;
-  display: none;
-
-  @include tablet {
-    display: block;
-    margin-top: 60px;
-  }
-}
