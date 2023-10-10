@@ -9,6 +9,8 @@ import Img7 from "../assets/img/7.png";
 import Img8 from "../assets/img/8.png";
 import Img9 from "../assets/img/9.png";
 
+import Plus from "../assets/img/plus.png";
+
 export const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState("all");
 
@@ -38,7 +40,7 @@ export const Portfolio = () => {
       key={img.id}
       className="portfolio__img"
       width="310px"
-      height="300"
+      height="300px"
       src={img.src}
       alt={`img${img.id}`}
     />
@@ -111,7 +113,11 @@ export const Portfolio = () => {
             </button>
           </li>
         </ul>
-        <div className="portfolio__container">{imageElements}</div>
+        <div className="portfolio__container">
+          {imageElements}
+
+          <img className="plus" src={Plus} alt="+" />
+        </div>
       </section>
     </>
   );

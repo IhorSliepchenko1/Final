@@ -56,7 +56,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    position: relative;
 
+    &:hover {
+      .plus {
+        opacity: 0.9;
+        transform: scale(1);
+      }
+    }
     @include desktop-small {
       grid-template-columns: 1fr 1fr;
     }
@@ -66,12 +73,24 @@
       text-align: center;
     }
   }
-}
-.a__active {
-  color: var(--Yellow);
+
+  .plus {
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0;
+    background: var(--c-primary);
+    position: absolute;
+
+    img {
+      transition: var(--transition);
+      transform: scale(0);
+    }
+  }
 }
 
 img {
+  position: relative;
+
   @include tablet {
     margin-bottom: 20px;
 

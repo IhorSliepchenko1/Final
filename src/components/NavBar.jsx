@@ -1,6 +1,5 @@
 import dark_mode from "../assets/icons/dark_mode.svg";
 import light_mode from "../assets/icons/light_mode.svg";
-import Tooltip from "@mui/material/Tooltip";
 
 export const NavBar = () => {
   function LightMode() {
@@ -32,12 +31,8 @@ export const NavBar = () => {
         </div>
 
         <ul className="nav-bar__ul">
-          <Tooltip title="Add" placement="top"></Tooltip>
-
           <li className="nav-bar__li">
             <a href="/" className="nav-bar__a">
-              <Tooltip id="my-tooltip" />
-
               <svg
                 width="40"
                 height="40"
