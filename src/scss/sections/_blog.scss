@@ -33,7 +33,7 @@
 .item {
   &__info {
     padding: 25rem 36rem 18rem 25rem;
-    background-color: var(--White);
+    background-color: var(--White-background);
 
     @include tablet {
       max-width: 310px;
