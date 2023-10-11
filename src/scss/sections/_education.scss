@@ -1,6 +1,10 @@
 .education {
-  margin-top: 100rem;
-  margin-bottom: 100rem;
+  margin-top: 70rem;
+  margin-bottom: 70rem;
+  @include mobile {
+    margin-top: 50rem;
+    margin-bottom: 50rem;
+  }
 
   &__title {
     color: var(--Black);

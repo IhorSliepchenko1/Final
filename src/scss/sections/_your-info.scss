@@ -1,94 +1,126 @@
-.info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .contacts {
-  &__name {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  gap: 30rem;
+  margin-bottom: 70rem;
+  @include tablet {
+    display: grid;
+  }
+
+  &__title {
+    font: var(--H2);
+    color: var(--Black);
+    margin-inline: auto;
+    margin-bottom: 50rem;
   }
 }
-.container {
-}
+
 .forms {
+  background-color: var(--White-background);
+  padding: 25rem;
   display: grid;
-  font: var(--Paragraph_Progress-15);
-  color: var(--Paragraph-Font);
 
   &__name {
+  font: var(--H4);
+  color: var(--Paragraph-Font);
+  max-width:314rem;
+  @include mobile {
+    font: var(--Paragraph_Progress-15);
+  }
+  }
+
+  &__input {
+  margin-bottom: 25rem;
+  width: 521rem;
+  padding: 13rem 8rem;
+  background-color: var(--Form-input);
+  border: 1rem solid transparent;
+  margin-top: 8rem;
+  font: var(--H4);
+  color: var(--Black);
+  outline: none;
+  &:focus,
+  &:active{
+    border: 1rem solid var(--Yellow);
+  }
+  @include mobile {
+    width: 380rem;
   }
 }
+
+  &__textarea {
+  margin-top: 8rem;
+  background-color: var(--Form-input);
+  border: 1rem solid transparent;
+  width: 521px;
+  height: 210px;
+  resize: none;
+  padding: 13rem 8rem;
+  font: var(--H4);
+  color: var(--Black);
+  &:focus,
+  &:active{
+    border: 1rem solid var(--Yellow);
+  }
+
+  @include mobile {
+    width: 380rem;
+  }
+}
+
+  &__btn{
+    background-color: var(--Yellow);
+    padding: 9rem 24rem;
+    color: var(--Black);
+    font: var(--Button-form);
+    text-transform: uppercase;
+    margin-top: 25rem;
+    max-width: 161rem;
+    &:hover {
+      background: #f5c24c;
+    }
+
+    @include mobile {
+    max-width: 220rem;
+    margin-inline: auto;
+    }
+  }
+}
+
 .information {
-  display: flex;
-  flex-direction: column;
-  font: var(--Paragraph_Progress-15);
-  color: var(--Paragraph-Font);
+
+  &__box{
+    display: grid;
+    gap: 18rem;
+  }
 
   &__item {
-    gap: 20px;
+    min-width: 370rem;
+    background-color: var(--White-background);
+    padding: 25rem 25rem 16rem;
     display: grid;
+    gap: 16rem;
+  }
+
+  &__icon{
+    margin-inline: auto;
+    margin-bottom: 15rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    max-width: 370px;
-    background: #fff;
+    max-height: 22rem;
   }
 
-  &__countrys {
-  }
-
-  &__country {
-  }
-
-  &__name {
-  }
-
-  &__Citys {
-  }
-
-  &__City {
+  &__title {
+    font: var(--H4);
+    color: var(--Paragraph-Font);
   }
 
   &__desc {
-  }
-
-  &__Streets {
-  }
-
-  &__street {
-  }
-
-  &__Emails {
-  }
-
-  &__Email {
-  }
-
-  &__Skypes {
-  }
-
-  &__Skype {
-  }
-
-  &__Telegrams {
-  }
-
-  &__Telegram {
-  }
-
-  &__Supports {
-  }
-
-  &__Support {
-  }
-
-  &__Offices {
-  }
-
-  &__Office {
-  }
-
-  &__Personals {
-  }
-
-  &__personal {
+    font: var( --Paragraph_Progress-15);
+    color: var(--Paragraph-Font);
   }
 }

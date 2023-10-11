@@ -1,5 +1,8 @@
 .blog {
   margin-bottom: 70rem;
+  @include mobile {
+    margin-bottom: 50rem;
+  }
 
   &__title {
     font: var(--H2);
