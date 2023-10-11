@@ -12,6 +12,10 @@
     color: var(--Black);
     margin-inline: auto;
     margin-bottom: 50rem;
+
+    @include tablet {
+      text-align: center;
+    }
   }
 }
 
@@ -20,55 +24,61 @@
   padding: 25rem;
   display: grid;
 
-  &__name {
-  font: var(--H4);
-  color: var(--Paragraph-Font);
-  max-width:314rem;
-  @include mobile {
-    font: var(--Paragraph_Progress-15);
+  @include tablet {
+    max-width: 500rem;
+    margin-inline: auto;
   }
+
+  &__name {
+    font: var(--H4);
+    color: var(--Paragraph-Font);
+    max-width: 314rem;
+    @include mobile {
+      font: var(--Paragraph_Progress-15);
+    }
   }
 
   &__input {
-  margin-bottom: 25rem;
-  width: 521rem;
-  padding: 13rem 8rem;
-  background-color: var(--Form-input);
-  border: 1rem solid transparent;
-  margin-top: 8rem;
-  font: var(--H4);
-  color: var(--Black);
-  outline: none;
-  &:focus,
-  &:active{
-    border: 1rem solid var(--Yellow);
+    margin-bottom: 25rem;
+    width: 521rem;
+    padding: 13rem 8rem;
+    background-color: var(--Form-input);
+    border: 1rem solid transparent;
+    margin-top: 8rem;
+    font: var(--H4);
+    color: var(--Black);
+    outline: none;
+    &:focus,
+    &:active {
+      border: 1rem solid var(--Yellow);
+    }
+
+    @include tablet {
+      max-width: 400rem;
+    }
   }
-  @include mobile {
-    width: 380rem;
-  }
-}
 
   &__textarea {
-  margin-top: 8rem;
-  background-color: var(--Form-input);
-  border: 1rem solid transparent;
-  width: 521px;
-  height: 210px;
-  resize: none;
-  padding: 13rem 8rem;
-  font: var(--H4);
-  color: var(--Black);
-  &:focus,
-  &:active{
-    border: 1rem solid var(--Yellow);
+    margin-top: 8rem;
+    background-color: var(--Form-input);
+    border: 1rem solid transparent;
+    width: 521px;
+    height: 210px;
+    resize: none;
+    padding: 13rem 8rem;
+    font: var(--H4);
+    color: var(--Black);
+    &:focus,
+    &:active {
+      border: 1rem solid var(--Yellow);
+    }
+
+    @include tablet {
+      max-width: 400rem;
+    }
   }
 
-  @include mobile {
-    width: 380rem;
-  }
-}
-
-  &__btn{
+  &__btn {
     background-color: var(--Yellow);
     padding: 9rem 24rem;
     color: var(--Black);
@@ -81,17 +91,21 @@
     }
 
     @include mobile {
-    max-width: 220rem;
-    margin-inline: auto;
+      max-width: 220rem;
+      margin-inline: auto;
     }
   }
 }
 
 .information {
-
-  &__box{
+  &__box {
     display: grid;
     gap: 18rem;
+
+    @include tablet {
+      max-width: 400rem;
+      margin-inline: auto;
+    }
   }
 
   &__item {
@@ -102,7 +116,7 @@
     gap: 16rem;
   }
 
-  &__icon{
+  &__icon {
     margin-inline: auto;
     margin-bottom: 15rem;
   }
@@ -120,7 +134,7 @@
   }
 
   &__desc {
-    font: var( --Paragraph_Progress-15);
+    font: var(--Paragraph_Progress-15);
     color: var(--Paragraph-Font);
   }
 }
