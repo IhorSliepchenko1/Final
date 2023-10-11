@@ -1,5 +1,9 @@
 .price {
   margin: 70rem 0 70rem 0;
+  @include mobile {
+    margin-top: 50rem;
+    margin-bottom: 50rem;
+  }
 
   &__header {
     display: flex;

@@ -63,8 +63,7 @@ export const Education = () => {
             <div className="block-first__univer">
               <h3 className="block-first__title">Web developer courses</h3>
 
-              <h4 className="block-first__student">
-                Student{" "}
+              <h4 className="block-first__student">Student{" "}
                 <span className="block-first__span">Jan 1016 - Dec 2021</span>
               </h4>
             </div>
