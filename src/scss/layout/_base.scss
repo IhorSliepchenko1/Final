@@ -40,15 +40,11 @@ body {
   max-width: 970px;
 
   @include tablet {
-    max-width: calc(970px - 219px);
+    max-width: calc(970px - 230px);
   }
 
   @include tablet-800 {
     max-width: calc(970px - 500px);
-  }
-
-  @include mobile {
-    max-width: calc(970px - 600px);
   }
 }
 
@@ -57,10 +53,9 @@ body {
   max-width: 1440px;
   display: flex;
   gap: 30px;
+
   @include tablet {
     max-width: calc(1440px - 219px);
-    justify-content: end;
-    gap: 0;
   }
 
   @include tablet-800 {
@@ -69,7 +64,6 @@ body {
 
   @include mobile {
     max-width: calc(1440px - 700px);
-
   }
 }
 

@@ -3,14 +3,13 @@
   padding: 50rem 34rem 568rem 34rem;
   background: var(--White-background);
   box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
-  gap: 212px;
+  gap: 212rem;
   height: fit-content;
   max-width: 108px;
   position: sticky;
   top: 0;
 
   @include tablet {
-    display: block;
     padding: 30rem 15rem 100rem 15rem;
   }
 
@@ -70,6 +69,7 @@
   transform: translateX(-50%);
   border-radius: 3px;
 }
+<<<<<<< HEAD
 
 .tooltip::before {
   position: absolute;
@@ -88,3 +88,5 @@
 }
 
 
+=======
+>>>>>>> ac32588e417bfd61a1152e1524a9f856ecc6555d
