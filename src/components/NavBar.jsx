@@ -1,5 +1,6 @@
 import dark_mode from "../assets/icons/dark_mode.svg";
 import light_mode from "../assets/icons/light_mode.svg";
+import { useState } from 'react';
 
 export const NavBar = () => {
   function LightMode() {
@@ -9,6 +10,51 @@ export const NavBar = () => {
     lightElement.classList.toggle("_active");
     darkElement.classList.toggle("_active");
   }
+
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [showTooltipFile, setShowTooltipFile] = useState(false);
+  const [showTooltipCV, setShowTooltipCV] = useState(false);
+  const [showTooltipPortfolio, setShowTooltipPortfolio] = useState(false);
+  const [showTooltipBlog, setShowTooltipBlog] = useState(false);
+  const [showTooltipContact, setShowTooltipContact] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowTooltip(true);
+  };
+  const handleMouseEnterFile = () => {
+    setShowTooltipFile(true);
+  };
+  const handleMouseEnterCV = () => {
+    setShowTooltipCV(true);
+  };
+  const handleMouseEnterPortfolio = () => {
+    setShowTooltipPortfolio(true);
+  };
+  const handleMouseEnterBlog = () => {
+    setShowTooltipBlog(true);
+  };
+  const handleMouseEnterContact = () => {
+    setShowTooltipContact(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
+  };
+  const handleMouseLeaveFile = () => {
+    setShowTooltipFile(false);
+  };
+  const handleMouseLeaveCV = () => {
+    setShowTooltipCV(false);
+  };
+  const handleMouseLeavePortfolio = () => {
+    setShowTooltipPortfolio(false);
+  };
+  const handleMouseLeaveBlog = () => {
+    setShowTooltipBlog(false);
+  };
+  const handleMouseLeaveContact = () => {
+    setShowTooltipContact(false);
+  };
 
   return (
     <>
@@ -32,7 +78,8 @@ export const NavBar = () => {
 
         <ul className="nav-bar__ul">
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}>
               <svg
                 width="40"
                 height="40"
@@ -58,10 +105,12 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+               {showTooltip && <div className="tooltip">Home</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+              <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterFile}
+                onMouseLeave={handleMouseLeaveFile}>
               <svg
                 width="40"
                 height="40"
@@ -87,10 +136,12 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+               {showTooltipFile && <div className="tooltip">File</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterCV}
+                onMouseLeave={handleMouseLeaveCV}>
               <svg
                 width="40"
                 height="40"
@@ -116,10 +167,12 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+              {showTooltipCV && <div className="tooltip">CV</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterPortfolio}
+                onMouseLeave={handleMouseLeavePortfolio}>
               <svg
                 width="40"
                 height="40"
@@ -145,10 +198,12 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+              {showTooltipPortfolio && <div className="tooltip">Portfolio</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterBlog}
+                onMouseLeave={handleMouseLeaveBlog}>
               <svg
                 width="40"
                 height="40"
@@ -174,10 +229,12 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+              {showTooltipBlog && <div className="tooltip">Blog</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a">
+            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterContact}
+                onMouseLeave={handleMouseLeaveContact}>
               <svg
                 width="40"
                 height="40"
@@ -203,6 +260,7 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
+              {showTooltipContact && <div className="tooltip">Contact</div>}
             </a>
           </li>
         </ul>

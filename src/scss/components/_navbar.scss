@@ -49,5 +49,42 @@
       fill: var(--Yellow);
     }
   }
+  &__li {
+  position: relative;
+   }
+  
 }
+.tooltip {
+  position: absolute;
+  background-color: var(--Black);
+  padding: 6rem 12rem;
+  color: var(--White);
+  font-family: var(--ff);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  top: -35rem;
+  z-index: 1;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.tooltip::before {
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid var(--Black);
+  border-top: 5px solid hsl(0, 0%, 20%);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+  z-index: 3;
+}
+
 
