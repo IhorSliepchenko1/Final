@@ -49,9 +49,8 @@
     }
   }
   &__li {
-  position: relative;
-   }
-  
+    position: relative;
+  }
 }
 .tooltip {
   position: absolute;
@@ -68,25 +67,20 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 3px;
+
+  &::before {
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid var(--Black);
+    border-top: 5px solid hsl(0, 0%, 20%);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    z-index: 3;
+  }
 }
-<<<<<<< HEAD
-
-.tooltip::before {
-  position: absolute;
-  top: 25rem;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid var(--Black);
-  border-top: 5px solid hsl(0, 0%, 20%);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-  z-index: 3;
-}
-
-
-=======
->>>>>>> ac32588e417bfd61a1152e1524a9f856ecc6555d
