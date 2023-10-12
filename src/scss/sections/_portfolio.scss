@@ -54,6 +54,10 @@
     font: var(--H4);
     text-transform: capitalize;
     transition: var(--transition);
+
+    &.a__active {
+      color: var(--Yellow);
+    }
   }
 
   &__container {
