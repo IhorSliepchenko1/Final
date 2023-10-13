@@ -5,8 +5,7 @@ import Img3 from "../assets/img/3.jpg";
 export const Blog = () => {
   return (
     <>
-      <section className="blog"
-      id="blog">
+      <section className="blog" data-aos="zoom-in-up" id="blog">
         <h2 className="blog__title">Blog</h2>
         <p className="blog__desc">
           Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet

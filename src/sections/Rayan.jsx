@@ -5,6 +5,7 @@ export const Rayan = () => {
   return (
     <>
       <section
+        data-aos="zoom-in-down"
         id="rayan"
         className="rayan container"
         style={{

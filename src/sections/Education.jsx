@@ -1,7 +1,7 @@
 export const Education = () => {
   return (
     <>
-      <section className="education container">
+      <section className="education container" data-aos="zoom-out-up">
         <h2 className="education__title">Education</h2>
         <p className="education__desc">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet

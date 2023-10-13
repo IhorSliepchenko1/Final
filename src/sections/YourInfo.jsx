@@ -3,8 +3,12 @@ import email from "../assets/icons/mail.svg";
 import phone from "../assets/icons/mobile.svg";
 export const YourInfo = () => {
   return (
-    <section className="contacts container"
-    id="contacts">
+    <section
+      className="contacts container"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      id="contacts"
+    >
       <div className="contacts__form">
         <h2 className="contacts__title">Leave us your info</h2>
         <form className="forms">

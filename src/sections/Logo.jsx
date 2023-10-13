@@ -5,19 +5,19 @@ import filling_station from "../assets/img/filling-station.png";
 
 export const Logo = () => {
   return (
-    <div className="logo">
-      <a href="/" className="logo__a">
+    <section className="logo">
+      <a href="/" className="logo__a" data-aos="flip-right">
         <img src={petroleum} alt="" className="logo__logo-img" />
       </a>
-      <a href="/" className="logo__a">
+      <a href="/" className="logo__a" data-aos="flip-right">
         <img src={filling_station} alt="" className="logo__logo-img" />
       </a>
-      <a href="/" className="logo__a">
+      <a href="/" className="logo__a" data-aos="flip-right">
         <img src={petrol} alt="" className="logo__logo-img" />
       </a>
-      <a href="/" className="logo__a">
+      <a href="/" className="logo__a" data-aos="flip-right">
         <img src={station} alt="" className="logo__logo-img" />
       </a>
-    </div>
+    </section>
   );
 };

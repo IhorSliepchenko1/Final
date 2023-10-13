@@ -14,7 +14,11 @@ import { Pagination } from "swiper/modules";
 export const Recommendations = () => {
   return (
     <>
-      <div className="reccomendations container">
+      <section
+        className="reccomendations container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <h2 className="section-rec__title">Recommendations</h2>
         <p className="section-rec__desc">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -278,7 +282,7 @@ export const Recommendations = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </section>
     </>
   );
 };

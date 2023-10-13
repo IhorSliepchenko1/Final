@@ -65,7 +65,7 @@ body {
 
   @include mobile {
     max-width: calc(1440px - 700px);
-    gap: 0;
+    gap: 10px;
   }
 }
 

@@ -7,7 +7,7 @@ export const Map = () => {
   };
 
   return (
-    <div className="map">
+    <div className="map" data-aos="fade-up" data-aos-duration="1000">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDxp7tD50n5Zm3NovmleG-HvSo-iVFEyG0" }} // Ваш ключ Google Maps API
         defaultCenter={defaultProps.center}

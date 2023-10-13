@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { CV } from "./components/CV";
 import { Rayan } from "./sections/Rayan";
 import { Services } from "./sections/Services";
@@ -17,7 +18,9 @@ import { Footer } from "./components/Footer";
 import { NavBar } from "./components/NavBar";
 
 function App() {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="wrapper">

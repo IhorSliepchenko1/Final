@@ -53,7 +53,7 @@ export const CV = () => {
 
   return (
     <>
-      <aside className="cv" id="cv">
+      <aside className="cv" id="cv" data-aos="zoom-in-up">
         <div className="cv__avatar">
           <img src={Rayan_avatar} alt="Rayan-avatar" />
           <h4 className="cv__name">Rayan Adlardard</h4>

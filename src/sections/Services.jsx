@@ -7,7 +7,7 @@ export const Services = () => {
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
       </p>
       <div className="services-list">
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <div className="services-item__img">
             <svg
               width="68"
@@ -37,7 +37,7 @@ export const Services = () => {
           <h4 className="services-item__title">web development</h4>
           <p className="services-item__desc">blog, e-commerce</p>
         </div>
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <div className="services-item__img">
             <svg
               width="68"
@@ -86,7 +86,7 @@ export const Services = () => {
           <h4 className="services-item__title">uI/uX design</h4>
           <p className="services-item__desc">Mobile app, website design</p>
         </div>
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <div className="services-item__img">
             <svg
               width="74"
@@ -115,7 +115,7 @@ export const Services = () => {
           <h4 className="services-item__title">sound design</h4>
           <p className="services-item__desc">Voice Over, Beat Making</p>
         </div>
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <div className="services-item__img">
             <svg
               width="74"
@@ -224,7 +224,7 @@ export const Services = () => {
             Character Design, Props & Objects
           </p>
         </div>
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <div className="services-item__img">
             <svg
               width="78"
@@ -246,7 +246,7 @@ export const Services = () => {
           <h4 className="services-item__title">photography</h4>
           <p className="services-item__desc">portrait, product photography</p>
         </div>
-        <div className="services-item">
+        <div className="services-item" data-aos="flip-right">
           <h4 className="services-item__title">advertising</h4>
           <p className="services-item__desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla

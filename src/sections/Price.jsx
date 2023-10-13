@@ -13,7 +13,7 @@ export const Price = () => {
           </p>
         </div>
         <div className="price__container">
-          <div className="price__item plan">
+          <div className="price__item plan" data-aos="flip-up">
             <h3 className="plan__title">silver</h3>
             <div className="plan__prices">
               <h2 className="plan__subtitle">$0.00</h2>
@@ -65,7 +65,7 @@ export const Price = () => {
               </button>
             </form>
           </div>
-          <div className="price__item plan most">
+          <div className="price__item plan most" data-aos="flip-up">
             <div className="plan__header">
               <p className="plan__popular">most popular</p>
             </div>
@@ -120,7 +120,7 @@ export const Price = () => {
               </button>
             </form>
           </div>
-          <div className="price__item plan">
+          <div className="price__item plan" data-aos="flip-up">
             <h3 className="plan__title">dimond</h3>
             <div className="plan__prices">
               <h2 className="plan__subtitle">$80.00</h2>
