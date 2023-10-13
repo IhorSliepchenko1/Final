@@ -7,10 +7,16 @@
   height: fit-content;
   max-width: 108px;
   position: sticky;
+  top: -10px; /* Adjust the negative value as needed */
+
   top: 0;
 
   @include tablet {
     padding: 30rem 15rem 100rem 15rem;
+  }
+
+  @include mobile {
+    padding: 30rem 7rem 65rem 7rem;
   }
 
   &__mode {
@@ -20,6 +26,7 @@
   &__ul {
     display: grid;
     gap: 43px;
+    text-align: center;
   }
 
   circle {

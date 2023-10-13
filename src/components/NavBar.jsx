@@ -74,6 +74,16 @@ export const NavBar = () => {
     setShowTooltipContact(false);
   };
 
+  const navBar = document.querySelector(".nav-bar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      navBar.style.top = "0";
+    } else {
+      navBar.style.top = "-35rem"; // Adjust this value as needed
+    }
+  });
+
   return (
     <>
       <nav className="nav-bar">
@@ -95,8 +105,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeave}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,8 +140,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeaveFile}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -165,8 +175,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeaveCV}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,8 +210,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeavePortfolio}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -235,8 +245,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeaveBlog}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -270,8 +280,8 @@ export const NavBar = () => {
               onMouseLeave={handleMouseLeaveContact}
             >
               <svg
-                width="40"
-                height="40"
+                width="40rem"
+                height="40rem"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

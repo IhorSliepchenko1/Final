@@ -34,16 +34,20 @@ $mobile-sm: 390px;
   --DarkParagraph-Font: #b3b3b4;
 
   // font
-  --Paragraph_Progress-15: 400 15px/160% var(--ff);
+  --Paragraph_Progress-15: 400 15rem/160% var(--ff);
   --H1: 700 48rem/124% var(--ff);
-  --H2: 700 32px/123.6% var(--ff);
-  --H3: 600 24px/123.6% var(--ff);
-  --H4: 500 18px/123.6% var(--ff);
-  --H5: 500 18px/123% var(--ff);
-  --H6: 400 16px/150% var(--ff);
+  --H2: 700 32rem/123.6% var(--ff);
+  --H3: 600 24rem/123.6% var(--ff);
+  --H4: 500 18rem/123.6% var(--ff);
+  --H5: 500 18rem/123% var(--ff);
+  --H6: 400 16rem/150% var(--ff);
   --btn-main: 500 16rem var(--ff);
-  --Button-price: 700 14px / normal var(--ff);
-  --Button-form: 600 14px / normal var(--ff);
+  --Button-price: 700 14rem / normal var(--ff);
+  --Button-form: 600 14rem / normal var(--ff);
+
+  @include tablet {
+    --H1: 700 35rem/124% var(--ff);
+  }
 }
 
 // --White-background: #fff; = --Dark-bacground: #464646;

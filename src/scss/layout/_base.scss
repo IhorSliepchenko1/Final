@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden; /* Add this line */
 }
 .container {
   max-width: 970px;
@@ -64,6 +65,7 @@ body {
 
   @include mobile {
     max-width: calc(1440px - 700px);
+    gap: 0;
   }
 }
 

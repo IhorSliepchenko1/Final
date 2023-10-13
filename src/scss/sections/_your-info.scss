@@ -56,6 +56,10 @@
     @include tablet {
       max-width: 400rem;
     }
+
+    @include mobile {
+      max-width: 350rem;
+    }
   }
 
   &__textarea {
@@ -75,6 +79,10 @@
 
     @include tablet {
       max-width: 400rem;
+    }
+
+    @include mobile {
+      max-width: 350rem;
     }
   }
 
