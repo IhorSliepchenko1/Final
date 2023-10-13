@@ -46,8 +46,8 @@
     border: 1rem solid transparent;
     margin-top: 8rem;
     font: var(--H4);
-    color: var(--Black);
-    outline: none;
+    color: #000;
+
     &:focus,
     &:active {
       border: 1rem solid var(--Yellow);
@@ -67,7 +67,7 @@
     resize: none;
     padding: 13rem 8rem;
     font: var(--H4);
-    color: var(--Black);
+    color: #2b2b2b;
     &:focus,
     &:active {
       border: 1rem solid var(--Yellow);

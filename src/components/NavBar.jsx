@@ -1,15 +1,33 @@
-import dark_mode from "../assets/icons/dark_mode.svg";
-import light_mode from "../assets/icons/light_mode.svg";
-import { useState } from 'react';
+import { useState } from "react";
+
+import Dark from "./UI/Dark";
 
 export const NavBar = () => {
-  function LightMode() {
-    const lightElement = document.getElementById("light");
-    const darkElement = document.getElementById("dark");
+  const [darkMode, setDarkMode] = useState(false);
 
-    lightElement.classList.toggle("_active");
-    darkElement.classList.toggle("_active");
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+    updateCSSVariables(darkMode);
+
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+
+    updateCSSVariables(newDarkMode);
   }
+
+  const updateCSSVariables = (isDarkMode) => {
+    const root = document.documentElement;
+    root.style.setProperty(
+      "--White-background",
+      isDarkMode ? "#464646" : "#fff"
+    );
+    root.style.setProperty("--Background", isDarkMode ? "black" : "#f0f0f6");
+    root.style.setProperty("--Black", isDarkMode ? "#fff" : "black");
+    root.style.setProperty(
+      "--Paragraph-Font",
+      isDarkMode ? "#b3b3b4" : "#767676"
+    );
+  };
 
   const [showTooltip, setShowTooltip] = useState(false);
   const [showTooltipFile, setShowTooltipFile] = useState(false);
@@ -59,27 +77,23 @@ export const NavBar = () => {
   return (
     <>
       <nav className="nav-bar">
-        <div className="nav-bar__mode">
-          <img
-            className="light"
-            onClick={LightMode}
-            id="light"
-            src={light_mode}
-            alt="light_mode"
-          />
-          <img
-            onClick={LightMode}
-            className="dark"
-            id="dark"
-            src={dark_mode}
-            alt="dark_mode"
-          />
+        <div
+          className="nav-bar__mode"
+          onClick={() => {
+            toggleDarkMode();
+          }}
+        >
+          <Dark class="dark" />
         </div>
 
         <ul className="nav-bar__ul">
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}>
+            <a
+              href="#rayan"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <svg
                 width="40"
                 height="40"
@@ -105,12 +119,16 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
-               {showTooltip && <div className="tooltip">Home</div>}
+              {showTooltip && <div className="tooltip">Home</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-              <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterFile}
-                onMouseLeave={handleMouseLeaveFile}>
+            <a
+              href="/"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnterFile}
+              onMouseLeave={handleMouseLeaveFile}
+            >
               <svg
                 width="40"
                 height="40"
@@ -136,12 +154,16 @@ export const NavBar = () => {
                   </clipPath>
                 </defs>
               </svg>
-               {showTooltipFile && <div className="tooltip">File</div>}
+              {showTooltipFile && <div className="tooltip">File</div>}
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterCV}
-                onMouseLeave={handleMouseLeaveCV}>
+            <a
+              href="#cv"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnterCV}
+              onMouseLeave={handleMouseLeaveCV}
+            >
               <svg
                 width="40"
                 height="40"
@@ -171,8 +193,12 @@ export const NavBar = () => {
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterPortfolio}
-                onMouseLeave={handleMouseLeavePortfolio}>
+            <a
+              href="#portfolio"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnterPortfolio}
+              onMouseLeave={handleMouseLeavePortfolio}
+            >
               <svg
                 width="40"
                 height="40"
@@ -202,8 +228,12 @@ export const NavBar = () => {
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterBlog}
-                onMouseLeave={handleMouseLeaveBlog}>
+            <a
+              href="#blog"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnterBlog}
+              onMouseLeave={handleMouseLeaveBlog}
+            >
               <svg
                 width="40"
                 height="40"
@@ -233,8 +263,12 @@ export const NavBar = () => {
             </a>
           </li>
           <li className="nav-bar__li">
-            <a href="/" className="nav-bar__a" onMouseEnter={handleMouseEnterContact}
-                onMouseLeave={handleMouseLeaveContact}>
+            <a
+              href="#contacts"
+              className="nav-bar__a"
+              onMouseEnter={handleMouseEnterContact}
+              onMouseLeave={handleMouseLeaveContact}
+            >
               <svg
                 width="40"
                 height="40"

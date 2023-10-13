@@ -5,6 +5,7 @@ export const Rayan = () => {
   return (
     <>
       <section
+        id="rayan"
         className="rayan container"
         style={{
           backgroundImage: `url(${bg})`,
@@ -14,7 +15,8 @@ export const Rayan = () => {
       >
         <div className="rayan__info">
           <h1 className="rayan__title">
-            I’m Rayan Adlrdard <span className="title__span">Front-end</span> Developer
+            I’m Rayan Adlrdard <span className="title__span">Front-end</span>{" "}
+            Developer
           </h1>
           <p className="rayan__desc">
             Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et,
