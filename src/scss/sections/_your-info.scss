@@ -3,8 +3,9 @@
   align-items: flex-start;
   gap: 30rem;
   margin-bottom: 70rem;
-  @include tablet {
+  @include desktop {
     display: grid;
+    justify-content: center;
   }
 
   &__title {

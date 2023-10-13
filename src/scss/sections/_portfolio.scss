@@ -89,6 +89,9 @@
     background: var(--c-primary);
     position: absolute;
 
+    @include tablet {
+      display: none;
+    }
     img {
       transition: var(--transition);
       transform: scale(0);

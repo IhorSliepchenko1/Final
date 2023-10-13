@@ -21,14 +21,13 @@ export const NavBar = () => {
       "--White-background",
       isDarkMode ? "#464646" : "#fff"
     );
-    root.style.setProperty("--Background", isDarkMode ? "black" : "#f0f0f6");
-    root.style.setProperty("--Black", isDarkMode ? "#fff" : "black");
+    root.style.setProperty("--Background", isDarkMode ? "#2a2a2a" : "#f0f0f6");
+    root.style.setProperty("--Black", isDarkMode ? "#fff" : "#464646");
     root.style.setProperty(
       "--Paragraph-Font",
       isDarkMode ? "#b3b3b4" : "#767676"
     );
   };
-
   const [showTooltip, setShowTooltip] = useState(false);
   const [showTooltipFile, setShowTooltipFile] = useState(false);
   const [showTooltipCV, setShowTooltipCV] = useState(false);
